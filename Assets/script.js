@@ -31,16 +31,16 @@ function CheckPassLen() {
     return specialChar;
 }
 
-function CheckPassLen() {
-    let numbers = prompt("would you like to include numbers in the password? Type yes or no.");
-    confirm("you have selected" + numbers + " for numbers.");
+function CheckNumber() {
+    let numbers = prompt("Would you like to include numbers into the password? Type y or n.");
+    confirm("You have selected " + numbers + " for numbers.");
     if (numbers === "yes") {
-        console.log("special characters selected.");
-    } else if (numbers === "no"); {
-    console.log ("do not include numbers.");
+        console.log("Numbers selected.");
+    } else if (numbers === "no") {
+        console.log('No numbers selected.');
     } else {
-    alert("please enter yes or no to choose.");
-    CheckPassLen();
+        alert("Please enter yes or no to choose.");
+        CheckNumber();
     }
     return numbers;
 }
