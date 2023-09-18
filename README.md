@@ -1,2 +1,2 @@
 # Password-Generator
-creates a radom secure password when you press generate password
+creates a random secure password with special characters if you choose to have them when you press generate password

@@ -1,13 +1,17 @@
-var generateBtn = document.querySelector("#generate");
+let generateBtn= Document.querySelector("generate");
+let specialChar = "!@#$%^&*()-=_+";
+let lowerCase = "abcdefghijklmnopqrstuvwxyz";
+let upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let numbers = "1234567890"
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
+function CheckPassLen() {
+    let passwordLen = parseInt(prompt('how long should we make the password? (8-128 characters'));
+    confirm('you have selected' + passwordLen + ' characters.');
+    if (passwordLen > 128) {
+        alert('Too many characters selected. Please select between 8 and 128.');
+        CheckPassLen();
+    } else if (passwordLen < 8) {
+        alert('Too few characters selected. Please select between 8 and 128.');
+    }
+    return passwordLen;
 }
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
