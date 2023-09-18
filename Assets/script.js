@@ -20,9 +20,9 @@ function CheckPassLen() {
 function CheckPassLen() {
     let specialChar = prompt("would you like to include special characters into the password? Type yes or no.");
     confirm("you have selected" + specialChar + "for special characters");
-    if (specialChar === 'yes') {
+    if (specialChar === "yes") {
         console.log("special characters selected.");
-    } else if (specialChar === 'no') {
+    } else if (specialChar === "no") {
         console.log ("do not include special characters.");
     } else {
         alert("please enter y or n to choose.");
@@ -31,3 +31,16 @@ function CheckPassLen() {
     return specialChar;
 }
 
+function CheckPassLen() {
+    let numbers = prompt("would you like to include numbers in the password? Type yes or no.");
+    confirm("you have selected" + numbers + " for numbers.");
+    if (numbers === "yes") {
+        console.log("special characters selected.");
+    } else if (numbers === "no"); {
+    console.log ("do not include numbers.");
+    } else {
+    alert("please enter yes or no to choose.");
+    CheckPassLen();
+    }
+    return numbers;
+}
