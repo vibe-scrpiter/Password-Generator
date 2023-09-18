@@ -25,7 +25,7 @@ function CheckSpecChar() {
     } else if (specialChar === "no") {
         console.log ("Special characters not included");
     } else {
-        alert("Please enter yes or no to choose.");
+        alert("enter yes or no to choose.");
         CheckPassLen();
     }
     return specialChar;
@@ -39,7 +39,7 @@ function CheckNumber() {
     } else if (numbers === "no") {
         console.log('no numbers included in password');
     } else {
-        alert("Please enter yes or no to choose.");
+        alert("enter yes or no to choose.");
         CheckNumber();
     }
     return numbers;
@@ -53,7 +53,7 @@ function CheckCaseLow() {
     } else if (lowerCase === "no") {
     console.log("Lower case letters not included");
     } else {
-        alert("please enter yes or no to choose.");
+        alert("enter yes or no to choose.");
         CheckCaseLow();
     }
     return lowerCase;
